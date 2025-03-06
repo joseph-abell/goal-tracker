@@ -79,7 +79,7 @@ export default function Home() {
 
   return (
     <main className={styles.container}>
-      <h1 className={styles.title}>Tesco Goal Tracker</h1>
+      <h1 className={styles.title}>Goal Tracker</h1>
 
       <div className={styles.tabs}>
         <button

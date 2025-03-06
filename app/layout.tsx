@@ -3,7 +3,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Tesco Goal Tracker",
+  title: "Goal Tracker",
   description: "Track your short-term and long-term goals",
     generator: 'v0.dev'
 }
