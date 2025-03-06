@@ -1,0 +1,191 @@
+.item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+  &.completed {
+    background-color: #f8f8f8;
+    
+    .title {
+      text-decoration: line-through;
+      color: #888;
+    }
+  }
+}
+
+.header {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.date {
+  font-style: italic;
+}
+
+.arrow {
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+  
+  &.expanded {
+    transform: rotate(180deg);
+  }
+}
+
+.details {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid #eee;
+}
+
+.description {
+  margin: 1rem 0;
+  color: #555;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.editButton, .deleteButton {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.editButton {
+  background-color: #f0f0f0;
+  color: #333;
+  
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.deleteButton {
+  background-color: #ff4d4f;
+  color: white;
+  
+  &:hover {
+    background-color: #ff3333;
+  }
+}
+
+.commentsSection {
+  margin-top: 1rem;
+}
+
+.commentsTitle {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.addCommentButton {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.75rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.editForm {
+  padding: 1rem;
+}
+
+.editInput, .editTextarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.editTextarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.editActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.saveButton, .cancelButton {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.saveButton {
+  background-color: #0070f3;
+  color: white;
+  
+  &:hover {
+    background-color: #0060df;
+  }
+}
+
+.cancelButton {
+  background-color: #f0f0f0;
+  color: #333;
+  
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+

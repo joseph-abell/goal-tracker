@@ -1,0 +1,53 @@
+.form {
+  margin-top: 1rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  min-height: 80px;
+  resize: vertical;
+  margin-bottom: 0.75rem;
+  
+  &:focus {
+    outline: none;
+    border-color: #0070f3;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.submitButton, .cancelButton {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton {
+  background-color: #0070f3;
+  color: white;
+  
+  &:hover {
+    background-color: #0060df;
+  }
+}
+
+.cancelButton {
+  background-color: #f0f0f0;
+  color: #333;
+  
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+

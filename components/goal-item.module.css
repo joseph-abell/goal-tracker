@@ -1,0 +1,195 @@
+.item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  background-color: var(--white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.item.completed {
+  background-color: var(--tesco-gray);
+}
+
+.item.completed .title {
+  text-decoration: line-through;
+  color: var(--tesco-light-text);
+}
+
+.header {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--tesco-blue);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--tesco-dark-gray);
+  flex: 1;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--tesco-light-text);
+}
+
+.date {
+  font-style: italic;
+}
+
+.arrow {
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.arrow.expanded {
+  transform: rotate(180deg);
+}
+
+.details {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid #eee;
+}
+
+.description {
+  margin: 1rem 0;
+  color: var(--tesco-medium-gray);
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.editButton,
+.deleteButton {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.editButton {
+  background-color: var(--tesco-light-blue);
+  color: var(--white);
+}
+
+.editButton:hover {
+  background-color: var(--tesco-blue);
+}
+
+.deleteButton {
+  background-color: var(--tesco-red);
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #d41929;
+}
+
+.commentsSection {
+  margin-top: 1rem;
+}
+
+.commentsTitle {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--tesco-dark-gray);
+}
+
+.addCommentButton {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.75rem;
+  background-color: var(--tesco-gray);
+  color: var(--tesco-dark-gray);
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.addCommentButton:hover {
+  background-color: #e0e0e0;
+}
+
+.editForm {
+  padding: 1rem;
+}
+
+.editInput,
+.editTextarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.editTextarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.editActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.saveButton,
+.cancelButton {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.saveButton {
+  background-color: var(--tesco-blue);
+  color: white;
+}
+
+.saveButton:hover {
+  background-color: var(--tesco-light-blue);
+}
+
+.cancelButton {
+  background-color: var(--tesco-gray);
+  color: var(--tesco-dark-gray);
+}
+
+.cancelButton:hover {
+  background-color: #e0e0e0;
+}
+
